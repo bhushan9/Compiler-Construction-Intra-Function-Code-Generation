@@ -39,15 +39,15 @@ The project submitted is not a complete implementation of intraFunction code gen
    
   | Input  |               Stack |      &nbsp        Action  |
   |-------|----------------------|------------------|
- |  a+(b*c) |     &nbsp          $         &nbsp    |      input a <br> |
- |  +(b*c)  |  &nbsp&nbsp             $a      &nbsp  |          input + <br> |
-  |  (b*c)   |    &nbsp           $a+    &nbsp         |    input ( <br> |
- |   b*c)   |  &nbsp             $a+(      &nbsp      |    input b  <br> |
- |   c)     |    &nbsp          $a+(b     &nbsp       |   input * <br> |
- |    c)     |      &nbsp        $a+(b*    &nbsp      |    input c <br> |
- |     )     |    &nbsp          $a+(b*c    &nbsp     |    pop the character and store into temporary string t1 until we encounter '(' and push onto stack <br> |
-  |   )      |   &nbsp           $a+t1     &nbsp       |   discard )  <br> |
-  |   eof    |      &nbsp        $a+t1         &nbsp   |   Repeat the procedure until we get a single string in the end. which stores the value of the expression <br> |
+ |  a+(b*c) |               $          |      input a <br> |
+ |  +(b*c)  |               $a       |          input + <br> |
+  |  (b*c)   |               $a+            |    input ( <br> |
+ |   b*c)   |               $a+(         |    input b  <br> |
+ |   c)     |              $a+(b          |   input * <br> |
+ |    c)     |           $a+(b*          |    input c <br> |
+ |     )     |             $a+(b*c        |    pop the character and store into temporary string t1 until we encounter '(' and push onto stack <br> |
+  |   )      |              $a+t1           |   discard )  <br> |
+  |   eof    |           $a+t1           |   Repeat the procedure until we get a single string in the end. which stores the value of the expression <br> |
 	
 
 <h2>Difficulties faced in the project</h2>
