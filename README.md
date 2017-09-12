@@ -37,20 +37,20 @@ The project submitted is not a complete implementation of intraFunction code gen
    If we have a expression such as a+(b*c)
    three address code is given by   t1=b*c, t2=a+t1 <br>
    
-   Input                  Stack               Action
-   a+(b*c)                $                   input a
-   +(b*c)                 $a                  input +
-   (b*c)                  $a+                 input (
-    b*c)                  $a+(                input b  
-    *c)                   $a+(b               input *
-     c)                   $a+(b*              input c
-      )                   $a+(b*c             pop the character and store into temporary string t1 until we encounter '(' and push onto stack
-     )                    $a+t1               discard )  
-     eof                  $a+t1               Repeat the procedure until we get a single string in the end. which stores the value of the expression 
+   Input                  Stack               Action  
+   a+(b*c)                $                   input a <br>
+   +(b*c)                 $a                  input + <br>
+   (b*c)                  $a+                 input ( <br>
+    b*c)                  $a+(                input b  <br>
+    *c)                   $a+(b               input * <br>
+     c)                   $a+(b*              input c <br>
+      )                   $a+(b*c             pop the character and store into temporary string t1 until we encounter '(' and push onto stack <br>
+     )                    $a+t1               discard )  <br>
+     eof                  $a+t1               Repeat the procedure until we get a single string in the end. which stores the value of the expression <br>
 	
 
 <h2>Difficulties faced in the project</h2>
 1. The first problem that I encountered was difficulty in generating abstract syntax tree from the parse tree. I could not get rid of the non terminals in the parse 
-   tree and hence had to abandon this approach
+   tree and hence had to abandon this approach <br>
 2. The stack approach to generate TAC works only with the arithmatic operators and fails when comparison operator is encountered. Another problem was creating a
    symbol table and mapping it to the TAC generated variables and locally/globally defined variables.   
