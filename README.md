@@ -1,19 +1,19 @@
-IMPORTATNT: The project submitted is not a complete implementation of intraFunction code generator. Only some part of functionalities are implemented.
+<h2>IMPORTATNT: The project submitted is not a complete implementation of intraFunction code generator. Only some part of functionalities are implemented. </h2>
 
 
 
-Following are the functionalities implemented:
-1. Generation of parse tree of expression rule using Tree data structure. The parse tree is shown in the input_extra.txt file generated.
+<h2>Following are the functionalities implemented </h2>
+1. Generation of parse tree of expression rule using Tree data structure. The parse tree is shown in the input_extra.txt file generated. <br>
 2. Three address code generation using stack. This only works for algaebric expression having +,-,*,/ and parenthesis. This does not work for other expression which 
    included conditional operations such as &&,!!, hence it gives a runtime error for some of the test cases. For test cases which does not have conditional operations 
-   the output is stored in the input_extra.txt
+   the output is stored in the input_extra.txt <br>
 3. If statement is transformed according to the given rules with the use of goto statements.   
 
 
-The project makes use of the parser provided by the Professor on the project description website.
+<h2>The project makes use of the parser provided by the Professor on the project description website.</h2>
 
 
-How to run the Project?
+<h2>How to run the Project?</h2>
 1. Extract the IntraFucntionTest folder in a working directory.
 2. Set src as the working directory using cd command.
 3. compile the scanner package using javac Icg/*.java
@@ -22,7 +22,7 @@ How to run the Project?
 3. compile the threeaddcode package using javac threeaddcode/*.java
 5. Run Parser.java using java Icg/Parser input_file.c   Where input_file.c is the name of test program.
 
-Implementation Methodology
+<h2>Implementation Methodology</h2>
 
 1. Parse tree is generated using the package Node. The class Node contains val, parent and list of children. Whenever the expression rule is called 
    we create root node named expression and add the productions as its children. Therefore according to our expression rule we have term and expression_prime as 
