@@ -38,15 +38,15 @@ The project submitted is not a complete implementation of intraFunction code gen
    three address code is given by   t1=b*c, t2=a+t1 <br>  &nbsp
    
    Input       &nbsp           Stack       &nbsp        Action  
-   a+(b*c)      &nbsp          $         &nbsp          input a <br>
-   +(b*c)    &nbsp&nbsp             $a      &nbsp            input + <br>
-   (b*c)       &nbsp           $a+    &nbsp             input ( <br>
-    b*c)     &nbsp             $a+(      &nbsp          input b  <br>
-    *c)         &nbsp          $a+(b     &nbsp          input * <br>
-     c)           &nbsp        $a+(b*    &nbsp          input c <br>
-      )         &nbsp          $a+(b*c    &nbsp         pop the character and store into temporary string t1 until we encounter '(' and push onto stack <br>
-     )         &nbsp           $a+t1     &nbsp          discard )  <br>
-     eof          &nbsp        $a+t1         &nbsp      Repeat the procedure until we get a single string in the end. which stores the value of the expression <br>
+*   a+(b*c)      &nbsp          $         &nbsp          input a <br>
+*   +(b*c)    &nbsp&nbsp             $a      &nbsp            input + <br>
+*   (b*c)       &nbsp           $a+    &nbsp             input ( <br>
+*    b*c)     &nbsp             $a+(      &nbsp          input b  <br>
+*    c)         &nbsp          $a+(b     &nbsp          input * <br>
+*     c)           &nbsp        $a+(b*    &nbsp          input c <br>
+*      )         &nbsp          $a+(b*c    &nbsp         pop the character and store into temporary string t1 until we encounter '(' and push onto stack <br>
+ *    )         &nbsp           $a+t1     &nbsp          discard )  <br>
+ *    eof          &nbsp        $a+t1         &nbsp      Repeat the procedure until we get a single string in the end. which stores the value of the expression <br>
 	
 
 <h2>Difficulties faced in the project</h2>
